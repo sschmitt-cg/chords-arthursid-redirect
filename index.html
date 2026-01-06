@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://tonalexplorer.com/" />
+
+    <!-- Instant redirect + preserve path -->
+    <script>
+      const target =
+        "https://tonalexplorer.com" +
+        location.pathname +
+        location.search +
+        location.hash;
+      location.replace(target);
+    </script>
+
+    <!-- Fallback -->
+    <meta http-equiv="refresh" content="0; url=https://tonalexplorer.com/" />
+  </head>
+  <body>
+    Redirecting to
+    <a href="https://tonalexplorer.com/">tonalexplorer.com</a>…
+  </body>
+</html>
